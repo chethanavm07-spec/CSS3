@@ -1,0 +1,367 @@
+/* -------------------------
+   RESET
+------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f1f5f9;
+
+    color: #182235;
+
+    line-height: 1.6;
+}
+
+
+/* -------------------------
+   HEADER
+------------------------- */
+
+.header {
+    height: 135px;
+
+    background: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 20px 6%;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 100;
+}
+
+
+/* Logo */
+
+.logo {
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.logo span {
+    font-size: 48px;
+
+    font-weight: bold;
+
+    color: #2864d7;
+
+    letter-spacing: -3px;
+}
+
+
+.logo small {
+    color: #777;
+
+    font-size: 8px;
+
+    letter-spacing: 1px;
+
+    margin-left: 4px;
+}
+
+
+/* Refresh */
+
+.refresh-btn {
+    width: 55px;
+
+    height: 55px;
+
+    border-radius: 50%;
+
+    border: 1px solid #e1e7ef;
+
+    background: white;
+
+    color: #2864d7;
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+    box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+}
+
+
+/* Menu */
+
+.menu-btn {
+    width: 60px;
+
+    height: 60px;
+
+    border: none;
+
+    border-radius: 14px;
+
+    background: #f0f6ff;
+
+    color: #2864d7;
+
+    font-size: 30px;
+
+    cursor: pointer;
+}
+
+
+/* -------------------------
+   MENU
+------------------------- */
+
+.menu {
+    display: none;
+
+    position: fixed;
+
+    right: 20px;
+
+    top: 100px;
+
+    background: white;
+
+    width: 200px;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+
+    z-index: 200;
+}
+
+
+.menu.show {
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.menu a {
+    padding: 12px;
+
+    color: #333;
+
+    text-decoration: none;
+
+    border-bottom: 1px solid #eee;
+}
+
+
+.menu a:hover {
+    background: #f0f6ff;
+
+    color: #2864d7;
+}
+
+
+/* -------------------------
+   MAIN
+------------------------- */
+
+.container {
+    width: 100%;
+
+    max-width: 1000px;
+
+    margin: 25px auto;
+
+    padding: 0 20px;
+}
+
+
+/* -------------------------
+   TASK CARD
+------------------------- */
+
+.task-card {
+    background: white;
+
+    border: 1px solid #e1e6ec;
+
+    border-radius: 14px;
+
+    padding: 38px;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+
+    margin-bottom: 30px;
+}
+
+
+/* Top */
+
+.top-row {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+
+.task-number {
+    width: 65px;
+
+    height: 65px;
+
+    background: #eef5ff;
+
+    border-radius: 17px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 28px;
+
+    font-weight: bold;
+
+    color: #2864d7;
+}
+
+
+.available {
+    background: #eef5ff;
+
+    color: #244a9e;
+
+    padding: 10px 18px;
+
+    border-radius: 25px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+/* -------------------------
+   DATE
+------------------------- */
+
+.date-row {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    border-bottom: 1px solid #edf0f3;
+
+    padding-bottom: 18px;
+
+    margin-bottom: 28px;
+
+    gap: 15px;
+}
+
+
+.date {
+    color: #677284;
+
+    font-size: 17px;
+}
+
+
+.date strong {
+    color: #283449;
+}
+
+
+.overdue {
+    background: #ffe2e4;
+
+    color: #a72a2e;
+
+    padding: 9px 16px;
+
+    border-radius: 25px;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+
+/* -------------------------
+   TITLE
+------------------------- */
+
+.task-card h1 {
+    font-size: 30px;
+
+    line-height: 1.35;
+
+    margin-bottom: 20px;
+
+    color: #142033;
+}
+
+
+.description {
+    font-size: 18px;
+
+    color: #526074;
+
+    margin-bottom: 25px;
+}
+
+
+/* -------------------------
+   TUTORIAL
+------------------------- */
+
+.tutorial-btn {
+    background: #fff5f5;
+
+    border: 1px solid #f5caca;
+
+    color: #cf3035;
+
+    padding: 14px 22px;
+
+    border-radius: 10px;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    margin-bottom: 25px;
+}
+
+
+.tutorial-btn:hover {
+    background: #ffe9e9;
+}
+
+
+.youtube {
+    display: inline-block;
+
+    background: #ff0000;

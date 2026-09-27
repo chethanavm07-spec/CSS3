@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Tasks</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+
+        <div class="logo">
+            <span>Thiranex</span>
+            <small>SKILL DEVELOPMENT & FUTURE TECH</small>
+        </div>
+
+        <button class="refresh-btn" onclick="refreshPage()">
+            ↻
+        </button>
+
+        <button class="menu-btn" onclick="toggleMenu()">
+            ☰
+        </button>
+
+    </header>
+
+
+    <!-- Mobile Menu -->
+    <div id="menu" class="menu">
+        <a href="#">Dashboard</a>
+        <a href="#">Tasks</a>
+        <a href="#">Profile</a>
+        <a href="#">Logout</a>
+    </div>
+
+
+    <!-- Main -->
+    <main class="container">
+
+        <!-- Task Card -->
+        <section class="task-card">
+
+            <div class="top-row">
+
+                <div class="task-number">
+                    2
+                </div>
+
+                <div class="available">
+                    AVAILABLE
+                </div>
+
+            </div>
+
+
+            <!-- Date -->
+            <div class="date-row">
+
+                <div class="date">
+                    📅
+                    Due Date:
+                    <strong>28 Aug 2026</strong>
+                </div>
+
+                <div class="overdue">
+                    Overdue by 29 Days
+                </div>
+
+            </div>
+
+
+            <!-- Title -->
+            <h1>
+                Advanced CSS3 & Responsive Architecture
+            </h1>
+
+
+            <!-- Description -->
+            <p class="description">
+                Transform the semantic portfolio into a
+                visually stunning, fully responsive design
+                using advanced CSS3 properties and modern
+                layout architectures.
+            </p>
+
+
+            <!-- Tutorial -->
+            <button class="tutorial-btn" onclick="watchTutorial()">
+
+                <span class="youtube">
+                    ▶
+                </span>
+
+                Watch Task Tutorial
+
+            </button>
+
+
+            <!-- Key
